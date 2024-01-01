@@ -200,24 +200,6 @@ Full:
 	LDI R16,'D' ;display letter 'D'
 	CALL DATAWRT 
 	LDI R16,'A' ;display letter 'A'
-	CALL DATAWRT
-	LDI R16,0x20 ;display Space
-	CALL DATAWRT
-	LDI R16,'&' ;display letter '&'
-	CALL DATAWRT 
-	LDI R16,0x20 ;display Space
-	CALL DATAWRT
-	LDI R16,'E' ;display letter 'E'
-	CALL DATAWRT 
-	LDI R16,'L' ;display letter 'L'
-	CALL DATAWRT
-	LDI R16,'H' ;display letter 'H'
-	CALL DATAWRT 
-	LDI R16,'D' ;display letter 'D'
-	CALL DATAWRT 
-	LDI R16,'A' ;display letter 'A'
-	CALL DATAWRT
-	LDI R16,'D' ;display letter 'D'
 	CALL DATAWRT 
 	RET
 ;--------------------------------------------------------------------------------------------------;
@@ -245,7 +227,7 @@ LCD_INIT:
 	CALL CMNDWRT ;call command function
 	CALL DELAY_2ms ;init. hold
 
-	LDI R16,0x28 ;init. LCD 2 lines,5×7 matrix
+	LDI R16,0x28 ;init. LCD 2 lines,5Ã—7 matrix
 	CALL CMNDWRT ;call command function
 	CALL DELAY_2ms ;init. hold
 
